@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abejas y Zánganos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/csscontacto.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Abejas y Zánganos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="quienessomos.html">Quiénes Somos</a>
+            <div class="logo">
+                <img src="imagenes/logo2.jpg" alt="Logo Abejas y Zánganos"> <!-- Imagen del logo -->
+            </div> <!-- Logo circular entre enlaces -->
+            <a href="contacto.html">Contacto</a>
+            <a href="tienda.html">Tienda</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="informacion-contacto">
+            <h2>Contacto</h2>
+            <p><strong>Correo Electrónico:</strong> contacto@abezyzanganos.com</p>
+            <p><strong>Teléfono:</strong> +34 600 123 456</p>
+            <p><strong>¿Dónde estamos?</strong><br>Somos una empresa ubicada en la región de XYZ, dedicada a la apicultura y todo lo relacionado con las abejas y zánganos.</p>
+        </section>
+
+        <section class="formulario">
+            <h2>¡Inscríbete para recibir ofertas y promociones!</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="gmail">Correo Electrónico (Gmail):</label>
+                <input type="email" id="gmail" name="gmail" required>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="^\d{3} \d{2} \d{2} \d{2}$" placeholder="xxx xx xx xx" required>
+
+                <div class="checkboxes">
+                    <label for="politica">
+                        <input type="checkbox" id="politica" name="politica" required> Acepto la <a href="#">política de privacidad</a>.
+                    </label>
+
+                    <label for="ofertas">
+                        <input type="checkbox" id="ofertas" name="ofertas" required> Acepto recibir ofertas y promociones.
+                    </label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    
+
+
+
+
+    <footer>
+        <p>Abejas y Zánganos &copy; </p>
+        <p>Derechos Reservados</p>
+        <br>
+        <br>
+    
+        <div class="iconos-redes">
+            <div class="icono">
+                <img src="imagenes/insta.png"Facebook">
+            </div>
+            <div class="icono">
+                <img src="imagenes/twitter.webp" alt="Twitter">
+            </div>
+            <div class="icono">
+                <img src="imagenes/facebook.png" alt="Instagram">
+            </div>
+            <div class="icono">
+                <img src="imagenes/gmail.png" alt="LinkedIn">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
